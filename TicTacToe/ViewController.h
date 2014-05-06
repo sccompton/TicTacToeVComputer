@@ -10,7 +10,9 @@
 
 @interface ViewController : UIViewController <UIAlertViewDelegate>
 
--(IBAction)onLabelTapped:(UITapGestureRecognizer *)tapGestureRecognizer;
+-(void)onLabelPlayed:(CGPoint)point;
 -(NSString *)whoOne;
+-(UILabel *)findLabelUsingPoint:(CGPoint) point;
+-(void)showTimer:(NSTimer *)timer;
 
 @end
